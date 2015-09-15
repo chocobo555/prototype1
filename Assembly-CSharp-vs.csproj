@@ -76,11 +76,12 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRTrackerBounds.cs" />
      <Compile Include="Assets\Scripts\Breathing.cs" />
      <Compile Include="Assets\Scripts\DarknessAdvance.cs" />
+     <Compile Include="Assets\Scripts\RecieveLight.cs" />
      <Compile Include="Assets\Scripts\Shine.cs" />
      <Compile Include="Assets\Scripts\movement.cs" />
-     <Compile Include="Assets\sphere1.cs" />
-     <Compile Include="Assets\sphere2.cs" />
-     <Compile Include="Assets\sphere3.cs" />
+     <Compile Include="Assets\Scripts\sphere1.cs" />
+     <Compile Include="Assets\Scripts\sphere2.cs" />
+     <Compile Include="Assets\Scripts\sphere3.cs" />
      <None Include="Assets\Plugins\Android\assets\donotdelete.txt" />
      <None Include="Assets\OVR\Moonlight\Shaders\OVRColorRampAlpha.shader" />
      <None Include="Assets\OVR\Moonlight\Shaders\Unlit Crosshair.shader" />

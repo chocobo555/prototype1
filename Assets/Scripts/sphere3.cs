@@ -40,36 +40,6 @@ public class sphere3 : MonoBehaviour
 			}
 		}		
 	}
-
-	/*
-	void Update()
-	{
-		if (beenEntered == false && mySphere2.beenEntered == false && mySphere1.beenEntered == false) 
-		{
-			Default();
-		}
-	}
-	*/
-
-	void Default()
-	{
-		portal.transform.localScale = new Vector3(0F, .01F, 0F);
-		
-		player.GetComponent<ParticleSystem>().emissionRate = 0;
-		
-		player.GetComponent<MeshRenderer>().materials[0].color = Color.white;
-
-		player.GetComponent<movement>().speed = 20;
-		player.GetComponent<movement>().rotSpeed = 40;
-		
-		Vector3 tempPosition = new Vector3(player.transform.position.x, 1F, player.transform.position.z);
-		player.transform.position = tempPosition;
-		
-		Vector3 tempPortalPosition = new Vector3(portal.transform.position.x, .01F, portal.transform.position.z);
-		portal.transform.position = tempPortalPosition;
-	}
-
-
 }
 
 

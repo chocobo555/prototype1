@@ -43,7 +43,4 @@ public class sphere1 : MonoBehaviour
 			}
 		}
 	}
-
-
-
 }

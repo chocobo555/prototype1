@@ -32,6 +32,13 @@ public class Shine : MonoBehaviour
 
 				hit.collider.gameObject.GetComponent<DarknessAdvance>().speed = 0;
 			}
+
+			if (hit.collider.gameObject.tag == "Player") 
+			{
+				print ("raycast hit player");
+
+				hit.collider.gameObject.GetComponent<RecieveLight>().Default();
+			}
 		}
 	}
 
