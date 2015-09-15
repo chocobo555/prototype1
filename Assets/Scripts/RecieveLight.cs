@@ -6,10 +6,17 @@ public class RecieveLight : MonoBehaviour
 
 	public GameObject portal;
 
+	public sphere1 mySphere1;
+	public sphere2 mySphere2;
+	public sphere3 mySphere3;
 
 
 	public void Default()
 	{
+		mySphere1.beenEntered = false;
+		mySphere2.beenEntered = false;
+		mySphere3.beenEntered = false;
+
 		portal.transform.localScale = new Vector3(0F, .01F, 0F);
 		
 		gameObject.GetComponent<ParticleSystem>().emissionRate = 0;

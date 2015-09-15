@@ -3,7 +3,9 @@ using System.Collections;
 
 public class Shine : MonoBehaviour 
 {
+	public LayerMask myLayerMask;
 	RaycastHit hit;
+
 	
 
 	// Use this for initialization
@@ -24,8 +26,10 @@ public class Shine : MonoBehaviour
 			gameObject.GetComponent<Light>().enabled = false; 
 		}
 
-		if (Physics.Raycast(transform.position, transform.forward, out hit) && Input.GetKey(KeyCode.Space)) 
+		if (Physics.Raycast(transform.position, transform.forward, out hit, myLayerMask) && Input.GetKey(KeyCode.Space)) 
 		{
+			print("hit something " + hit.collider.gameObject.name);
+
 			if (hit.collider.gameObject.tag == "darkness") 
 			{
 				print ("raycast hit darkness");
